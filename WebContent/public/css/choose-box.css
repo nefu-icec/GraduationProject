@@ -1,0 +1,35 @@
+.choose-box{
+	width: 80px;
+	height: 24px;
+	position: relative;
+	font-size: 13px;
+	left: 0;
+	top: 0;
+}
+.no-slt{
+	width: 80px;
+	height: 24px;
+	background: red;
+	color: white;
+	text-align: center;
+	line-height: 24px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+}
+.opt{
+	float: left;
+	width: 40px;
+	height: 24px;
+	background: gray;
+	text-align: center;
+	line-height: 24px;
+	cursor: pointer;
+}
+.opt:hover{
+	background: #49e;
+}
+.chosen{
+	background: #89f;
+}

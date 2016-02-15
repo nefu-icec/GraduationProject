@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>用户资料</title>
+	<script type="text/javascript" src="public/js/userInfo.js"></script>
+</head>
+<body>
+	<div class="tid">教师编号：<span class="userInfo-content"></span></div>
+	<div class="tname">教师姓名：<span class="userInfo-content"></span></div>
+	<div class="profession">教师职称：<span class="userInfo-content"></span></div>
+	<div class="password">教师密码：<span class="userInfo-content"></span></div>
+	<div id="modifyPassword">
+		<button id="modiPass-btn">修改密码</button>
+		<div id="modiPass-success">修改成功！</div>
+		<div id="modiPass-fail">修改失败，请重试！！</div>
+		<div id="modiPass-input">
+			新密码：<input type="text" id="new-password"><br>
+			重复密码：<input type="text" id="repeat-new-password"><br>
+			<button id="modiPass-submit">确定</button>
+			<button id="modiPass-reset">重置</button>
+			<button id="modiPass-cancel">取消</button>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.showInfo{
+	display: none;
+}
+.show{
+	display: block;
+}
+.glyphicon-cloud-download, 
+.glyphicon-wrench,
+.glyphicon-comment {
+	cursor: pointer;
+}
+.glyphicon-cloud-download:hover,
+.glyphicon-wrench:hover,
+.glyphicon-comment:hover {
+	color: #ccc;
+}
+#sbt-res{
+	margin-bottom: 8px;
+}

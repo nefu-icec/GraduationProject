@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>清空数据</title>
+	<script type="text/javascript" src="public/js/clearData.js"></script>
+	<style>
+		.danger{
+			border-color: red;
+		}
+		.pop-content{
+			padding: 5px 20px 15px;
+		}
+		#clearData-pwd{
+			margin-bottom: 10px;
+			width:200px;
+			display:inline-block;
+		}
+		#clearData-form p{
+			height: 20px;
+			color: red;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<form id="clearData-form">
+		<span style="margin-bottom:10px;height:30px;line-height: 30px;">请输入管理员密码确认清空</span>
+		<input type="password" id="clearData-pwd" class="form-control" >
+		<span class="glyphicon glyphicon-remove pwd-error" style="color:red;display:none;"></span>
+		<p class="error-msg"></p>
+		<input type="submit" class="btn btn-default btn-sm" style="margin-right:10px; width: 108px;">
+		<input type="reset" class="btn btn-danger btn-sm" style="width: 108px;">
+	</form>
+</body>
+</html>

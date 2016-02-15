@@ -1,0 +1,211 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body,html{
+	height: 100%;
+}
+#mask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: none;
+	background: rgba(0,0,0,0.3);
+	z-index: 3;
+}
+.change-box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 300px;
+	z-index: 9;
+	background: #fff;
+}
+#nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	color: #fff;
+	width: 100%;
+	height: 41px;
+	padding: 0 20px;
+	background: #3993ba;
+	background: -moz-linear-gradient(top, #3993ba 0%, #067ead 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3993ba), color-stop(100%,#067ead));
+	background: -webkit-linear-gradient(top, #3993ba 0%,#067ead 100%);
+	background: -o-linear-gradient(top, #3993ba 0%,#067ead 100%);
+	background: -ms-linear-gradient(top, #3993ba 0%,#067ead 100%);
+	background: linear-gradient(top, #3993ba 0%,#067ead 100%);
+	-webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+	z-index: 3;
+}
+.logo{
+	width:40px;
+	height:40px;
+	margin-right:20px;
+	float:left;
+}
+#user{
+	float: right;
+	line-height: 40px;
+}
+#tname{
+	color:#fff;
+}
+#nav h1{
+	display: inline-block;
+	margin: 0;
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+	line-height: 40px;
+	cursor: pointer;
+}
+#sidebar{
+	position: fixed;
+	top: 41px;
+	left: 0;
+	float: left;
+	width: 15%;
+	min-height: 100%;
+	border-right: 1px solid #ccc;
+	padding-top: 30px;
+	background: #f1f1f1;
+}
+#sidebar ul{
+	list-style: none;
+}
+#sidebar > #menu > li{
+	width: 100%;
+	text-shadow: 1px 1px 0 #efefef;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #ececec;
+	box-shadow: inset 0px 1px 0px 0px #ececec;
+	border-bottom: 1px solid #ccc;
+	background: #e0e0e0;
+}
+#sidebar a{
+	display: block;
+	color: #222;
+	font-size: 13px;
+	padding: 8px 15px;
+	text-decoration: none;
+	width: 100%;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+}
+#sidebar a:hover {
+	background-color: #cfcfcf;
+	color: #222;
+}
+#sidebar .menu-list{
+	display: none;
+	border-top: 1px solid #ccc;
+	padding: 9px 15px;
+	background: #fafafa;
+}
+#sidebar .menu-list li a{
+	padding: 3px 15px;
+	border-radius: 3px;
+}
+#sidebar .menu-list li a:hover{
+	background-color: #eee;
+}
+#content{
+	float: right;
+	width: 85%;
+	padding: 30px;
+	margin-top: 41px;
+}
+.title{
+	display: block;
+	overflow: hidden;
+	border: solid 1px #e9e9e9;
+	background: #fff;
+	margin: 0 0 20px;
+	padding: 5px 5px 5px 15px;
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #f5f5f5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f5f5f5));
+	background: -webkit-linear-gradient(top, #ffffff 0%,#f5f5f5 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#f5f5f5 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#f5f5f5 100%);
+	background: linear-gradient(top, #ffffff 0%,#f5f5f5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f5',GradientType=0 );
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	border-radius: 4px;
+}
+#main{
+	position:relative;
+}
+
+#title
+{
+	cursor: pointer;
+}
+
+#title:hover
+{
+	color: #dddddd;
+}
+
+#modiPass-input,#modiPass-success,#modiPass-fail
+{
+	display: none;
+}
+
+#online-span
+{
+	cursor: pointer;
+}
+
+#server-connect
+{
+	position: absolute;
+	right: 140px;
+	display: none;
+}
+
+#server-connect .glyphicon-arrow-up
+{
+	position: absolute;
+	right: 16px;
+	top:10px;
+	color: rgb(0,255,0);
+}
+
+#server-connect .glyphicon-arrow-down
+{
+	position: absolute;
+	top:15px;
+	right: 24px;
+	color: rgb(255,0,0);
+}
+
+#new-push
+{
+	position: absolute;
+	right: 180px;
+	margin-top:10px;
+	float: left;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: white;
+	background: rgb(255,50,50);
+	border-radius: 50%;
+}
+
+#new-push:hover
+{
+	cursor: pointer;
+	background: rgb(255,100,100);
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>管理员资料</title>
+	<script type="text/javascript" src="public/js/userInfo.js"></script>
+	<style>
+		#modiPass-input input{
+			margin-bottom: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div class="tid">管理员编号：<span class="userInfo-content"></span></div>
+	<div class="password">管理员密码：<span class="userInfo-content"></span></div>
+	<div id="modifyPassword">
+		<button id="modiPass-btn" class="btn btn-default btn-sm" style="width:280px;">修改密码</button>
+		<div id="modiPass-success">修改成功！</div>
+		<div id="modiPass-fail">修改失败，请重试！！</div>
+		<div id="modiPass-input">
+			新密码：<input type="password" class="form-control input-sm" id="new-password">
+			重复密码：<input type="password" class="form-control input-sm" id="repeat-new-password">
+			<button id="modiPass-submit" class="btn btn-default btn-sm" style="width:90px;">确定</button>
+			<button id="modiPass-reset" class="btn btn-default btn-sm" style="width:90px;">重置</button>
+			<button id="modiPass-cancel" class="btn btn-default btn-sm" style="width:90px;">取消</button>
+		</div>
+	</div>
+</body>
+</html>

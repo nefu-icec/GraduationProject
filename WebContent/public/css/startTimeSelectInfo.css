@@ -1,0 +1,21 @@
+.teacher
+{
+	background:rgb(245,245,245);
+	cursor: pointer;
+}
+
+.teacher:hover
+{
+	background:rgb(220,220,220);
+}
+
+.glyphicon-chevron-down
+{
+	position:relative;
+	right: 0px;
+}
+
+.studentInfo
+{
+	display: none;
+}

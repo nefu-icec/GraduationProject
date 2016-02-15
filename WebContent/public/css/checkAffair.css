@@ -1,0 +1,78 @@
+.teacher
+{
+	background:rgb(245,245,245);
+	cursor: pointer;
+}
+
+.teacher:hover
+{
+	background:rgb(220,220,220);
+}
+
+.glyphicon-chevron-down
+{
+	position:relative;
+	right: 0px;
+}
+
+.studentInfo
+{
+	display: none;
+}
+
+
+
+
+
+.showInfo{
+	display: none;
+}
+.show{
+	display: block;
+}
+.glyphicon-wrench{
+	cursor: pointer;
+}
+.glyphicon-wrench:hover{
+	color: #ccc;
+}
+.glyphicon-floppy-disk{
+	cursor: pointer;
+}
+.glyphicon-floppy-disk:hover{
+	color: #ccc;
+}
+.pop-title{
+	font-family: "Microsoft YaHei";
+	font-weight: bold;
+	text-align: center;
+	line-height: 30px;
+	padding: 5px;
+	background: rgb(248,248,248);
+	border-radius: 3px 3px 0 0;
+}
+.pop-change-box{
+	position:fixed;
+	top: 0;
+	left: 0;
+	z-index:10;
+	width: 500px;
+	height: 250px;
+	background: #fff;
+	border: 1px solid #999;
+	box-shadow: 1px 1px 15px hsla(0,21%,60%,.6); 
+	border-radius: 5px;
+	display: none;
+}
+.pop-content{
+	padding: 20px;
+}
+.pop-content table tr{
+	height: 30px;
+}
+.pop-content table td{
+	padding: 0 5px;
+}
+#new-info{
+	width: 370px;
+}

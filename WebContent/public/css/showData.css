@@ -1,0 +1,19 @@
+.showInfo{
+	display: none;
+}
+.show{
+	display: block;
+}
+.input-sm{
+	padding: 2px 2px;
+	height: 22px;
+}
+.pop-content table tr{
+	height: 30px;
+}
+.pop-content table td{
+	padding: 0 5px;
+}
+#new-info{
+	width: 370px;
+}

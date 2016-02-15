@@ -1,0 +1,61 @@
+#newWork
+{
+	background: white;	
+	width: 550px;
+	height: 370px;
+	position: absolute;
+	z-index: 10;
+	border-radius: 5px;
+}
+
+.close
+{
+	float:right;
+	position:absolute;
+	top:5px;
+	right:5px;
+}
+
+#newWork tr td{
+	max-height: 34px;
+}
+
+#newWork .pop-title
+{
+	font-family: "Microsoft YaHei";
+	font-weight: bold;
+	text-align: center;
+	line-height: 30px;
+	padding: 5px;
+	background: rgb(248,248,248);
+	border-radius: 3px 3px 0 0;
+}
+
+#newWork .pop-content
+{
+	padding: 5px 30px;
+}
+
+ul.task-list
+{
+	list-style: none;
+}
+
+ul.task-list li
+{
+	float: left;
+	width: 100px;
+	height: 25px;
+	margin-right: 20px;
+}
+
+#addWork
+{
+	float: right;
+}
+
+#checkAffair
+{
+	float: right; 
+	margin-right: 10px;
+}

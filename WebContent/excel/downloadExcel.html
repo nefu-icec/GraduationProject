@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>下载报表</title>
+	<style>
+		#checkBoxs ul{
+			list-style: none;
+			padding: 0;
+		}
+		#checkBoxs li{
+			height: 24px;
+			font-family: "Microsoft YaHei";
+			font-weight: normal;
+		}
+	</style>
+</head>
+<body>
+	<p class="title">
+		<span class="glyphicon glyphicon-download-alt" style="margin-right: 5px;"></span>  
+		<span style="color: #bbb;">\</span> 下载报表
+	</p>
+	<form action="ExcelServlet?task=downloadExcel" method="post">
+		<div id="checkBoxs"></div>
+		报表标题<input type="text" name="title"  class="form-control" style="display: inline-block; width:200px;">
+        <button type="submit" class="btn btn-default" id="selectAll">全选</button>
+        <button type="submit" class="btn btn-default" id="selectNull">反选</button>
+        <button type="submit" class="btn btn-default" id="download">下载</button>
+	</form>
+	<script type="text/javascript" src="public/js/downloadExcel.js"></script>
+</body>
+</html>

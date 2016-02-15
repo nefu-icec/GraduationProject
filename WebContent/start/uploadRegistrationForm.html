@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>上传登记表</title>
+</head>
+<body>
+	<p id="message"  style="display:none;">登记表已上传，如需重新上传，请重置系统！！！</p>
+	<div id="upload" style="display:none;">
+		<br>
+		<form>
+			<div>请确保上传的登记表中包含以下字段：<br>"学院","专业名称","行政班","学号","姓名","联系电话","年级","学籍状态"</div>
+			<div id="queue"></div>
+			<div style="color: blue;"><input id="file_upload" name="file_upload"  type="file" multiple="true"></div>
+		</form>
+	</div>
+	<script type="text/javascript" src="public/js/uploadRegistrationForm.js"></script>
+</body>
+</html>
