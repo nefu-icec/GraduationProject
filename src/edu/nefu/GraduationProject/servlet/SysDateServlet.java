@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 import edu.nefu.GraduationProject.bean.Teacher;
 import edu.nefu.GraduationProject.dao.SysDateDao;
 import edu.nefu.GraduationProject.util.DateTool;
-import edu.nefu.GraduationProject.websocket.LogMessageInboundPool;
 
 @WebServlet("/SysDateServlet")
 public class SysDateServlet extends HttpServlet
@@ -33,19 +32,19 @@ public class SysDateServlet extends HttpServlet
 		switch (task)
 		{
 		case "setFirstStart":
-			LogMessageInboundPool.sendMessageOther(teacher, "Set:=设置一次开题时间");
+//			LogMessageInboundPool.sendMessageOther(teacher, "Set:=设置一次开题时间");
 			out.print(SysDateDao.setFirstStart(getStringDate(request)));
 			break;
 		case "setSecondStart":
-			LogMessageInboundPool.sendMessageOther(teacher, "Set:=设置二次开题时间");
+//			LogMessageInboundPool.sendMessageOther(teacher, "Set:=设置二次开题时间");
 			out.print(SysDateDao.setSecondStart(getStringDate(request)));
 			break;
 		case "setFirstEnd":
-			LogMessageInboundPool.sendMessageOther(teacher, "Set:=设置一次答辩时间");
+//			LogMessageInboundPool.sendMessageOther(teacher, "Set:=设置一次答辩时间");
 			out.print(SysDateDao.setFirstEnd(getStringDate(request)));
 			break;
 		case "setSecondEnd":
-			LogMessageInboundPool.sendMessageOther(teacher, "Set:=设置二次答辩时间");
+//			LogMessageInboundPool.sendMessageOther(teacher, "Set:=设置二次答辩时间");
 			out.print(SysDateDao.setSecondEnd(getStringDate(request)));
 			break;
 		case "getFirstStart":

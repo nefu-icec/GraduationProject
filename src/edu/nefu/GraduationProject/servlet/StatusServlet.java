@@ -16,7 +16,6 @@ import edu.nefu.GraduationProject.dao.DataDao;
 import edu.nefu.GraduationProject.dao.StatusDao;
 import edu.nefu.GraduationProject.dao.SysDateDao;
 import edu.nefu.GraduationProject.util.DateTool;
-import edu.nefu.GraduationProject.websocket.LogMessageInboundPool;
 
 @WebServlet("/StatusServlet")
 public class StatusServlet extends HttpServlet 
@@ -109,7 +108,7 @@ public class StatusServlet extends HttpServlet
 		{
 			if(StatusDao.set(0)&&SysDateDao.clear()&&AffairDao.clear()&&DataDao.clear())
 			{
-				LogMessageInboundPool.sendMessageOther(teacher, "ClearData:=true");
+//				LogMessageInboundPool.sendMessageOther(teacher, "ClearData:=true");
 				out.print(true);
 			}				
 			else

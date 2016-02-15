@@ -6,10 +6,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import javax.naming.Context;
-import javax.naming.InitialContext;
-import javax.sql.DataSource;
-
 public class ConnectDB 
 {
 	Connection connection=null;
@@ -20,7 +16,7 @@ public class ConnectDB
 		try
 		{
 			Class.forName("com.mysql.jdbc.Driver");
-			String url="jdbc:mysql://localhost:3306/graduationproject?user=root&password=";
+			String url="jdbc:mysql://127.0.0.1:3306/graduationproject?user=root&password=";
 			connection=DriverManager.getConnection(url);
 			statement=connection.createStatement();
 //			Context context=new InitialContext();

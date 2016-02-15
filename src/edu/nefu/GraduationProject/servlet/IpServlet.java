@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import edu.nefu.GraduationProject.util.NetTool;
-import edu.nefu.GraduationProject.websocket.LogMessageInboundPool;
 
 @WebServlet("/IpServlet")
 public class IpServlet extends HttpServlet 
@@ -58,6 +57,6 @@ public class IpServlet extends HttpServlet
 	private void sendMessage(HttpServletRequest request,HttpServletResponse response) 
 	{
 		String message=request.getParameter("message");
-		LogMessageInboundPool.sendMessageAll(message);
+//		LogMessageInboundPool.sendMessageAll(message);
 	}
 }

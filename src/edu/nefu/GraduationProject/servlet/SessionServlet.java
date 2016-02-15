@@ -11,7 +11,6 @@ import javax.servlet.http.HttpSession;
 
 import edu.nefu.GraduationProject.bean.Teacher;
 import edu.nefu.GraduationProject.dao.TeacherDao;
-import edu.nefu.GraduationProject.websocket.LogMessageInboundPool;
 
 @WebServlet("/SessionServlet")
 public class SessionServlet extends HttpServlet 
@@ -63,7 +62,7 @@ public class SessionServlet extends HttpServlet
 		if(teacher!=null)
 		{
 			ApplicationServlet.remove(getServletContext(), teacher);
-			LogMessageInboundPool.sendMessageOther(teacher,"TeacherExit:="+teacher.getTid()+","+teacher.getTname());
+//			LogMessageInboundPool.sendMessageOther(teacher,"TeacherExit:="+teacher.getTid()+","+teacher.getTname());
 		}
 		session.removeAttribute("teacher");	
 		response.sendRedirect("index.html");
@@ -77,7 +76,7 @@ public class SessionServlet extends HttpServlet
 		session.removeAttribute("teacher");
 		session.setAttribute("teacher", teacher);
 		ApplicationServlet.addTeacher(getServletContext(), teacher);
-		LogMessageInboundPool.sendMessageOther(teacher,"NewTeacherLogin:="+teacher.getTid()+","+teacher.getTname());
+//		LogMessageInboundPool.sendMessageOther(teacher,"NewTeacherLogin:="+teacher.getTid()+","+teacher.getTname());
 		response.getWriter().print(true);
 	}
 	

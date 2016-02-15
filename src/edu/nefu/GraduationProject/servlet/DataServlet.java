@@ -14,7 +14,6 @@ import edu.nefu.GraduationProject.bean.Teacher;
 import edu.nefu.GraduationProject.dao.DataDao;
 import edu.nefu.GraduationProject.dao.LogDao;
 import edu.nefu.GraduationProject.util.DateTool;
-import edu.nefu.GraduationProject.websocket.LogMessageInboundPool;
 
 @WebServlet("/DataServlet")
 public class DataServlet extends HttpServlet 
@@ -114,7 +113,7 @@ public class DataServlet extends HttpServlet
 			message+=push.getTname()+"$&$";//5
 			message+=push.getColumnName()+"$&$";//6
 			message+=push.getContent();//7
-			LogMessageInboundPool.sendMessageOther(teacher, "Modify:="+message);
+//			LogMessageInboundPool.sendMessageOther(teacher, "Modify:="+message);
 		}
 	}
 }
